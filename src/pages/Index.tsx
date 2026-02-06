@@ -15,7 +15,7 @@ const Index = () => {
         {/* Header / Banner */}
         <div className="relative h-44 w-full overflow-hidden">
           <img 
-            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop" 
+            src="https://files.catbox.moe/1qdiue.jpg" 
             alt="Banner" 
             className="w-full h-full object-cover"
           />
