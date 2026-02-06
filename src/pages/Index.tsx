@@ -61,47 +61,80 @@ const Index = () => {
             </div>
 
             {/* Subscription Plans Section */}
-            <div className="mt-10 space-y-6">
+            <div className="mt-10 space-y-8">
               <div className="flex items-center justify-center gap-2 text-[#1A1A1A] font-bold text-lg">
                 Ofertas exclusivas <Flame className="w-5 h-5 text-orange-500 fill-orange-500" />
               </div>
 
-              <div className="space-y-4">
-                {/* Promo Plan */}
-                <div className="relative">
-                  <div className="absolute -top-3 -right-2 z-20">
-                    <div className="bg-[#E1F3F2] text-[#2F9E98] text-[10px] font-bold py-1 px-3 rounded-full border border-[#2F9E98]/20">
-                      -10% OFF
+              <div className="space-y-7">
+                {/* 7 Days Plan */}
+                <div className="relative pt-3">
+                  <div className="absolute -top-1.5 left-6 z-20">
+                    <div className="bg-[#008ABF] text-white text-[10px] font-black px-4 py-1.5 rounded-xl uppercase tracking-wider">
+                      Oferta Limitada
                     </div>
                   </div>
-                  <button className="w-full text-left group">
-                    <div className="p-5 rounded-[2rem] bg-[#008ABF] text-white shadow-lg shadow-[#008ABF]/20 active:scale-[0.98] transition-all relative overflow-hidden">
-                      <div className="flex justify-between items-center relative z-10">
-                        <p className="text-[17px] font-bold">Assinar agora (7 dias)</p>
-                        <p className="text-[17px] font-black">R$ 19,90</p>
+                  <button className="w-full flex items-center justify-between p-4 rounded-[1.5rem] border-2 border-[#008ABF] bg-white active:scale-[0.98] transition-all group">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-full bg-[#008ABF]/10 flex items-center justify-center">
+                        <Sparkles className="w-6 h-6 text-[#008ABF] fill-[#008ABF]" />
+                      </div>
+                      <div className="text-left">
+                        <p className="text-[16px] font-bold text-[#1A1A1A]">Assinatura Semanal</p>
+                        <p className="text-[12px] text-[#8E8E8E] font-medium">Cobrado a cada 7 dias</p>
                       </div>
                     </div>
-                    <p className="text-center text-[11px] text-[#8E8E8E] mt-2">
-                      De <span className="line-through">R$ 22,90</span> por apenas <span className="font-bold">R$ 19,90</span>
-                    </p>
+                    <div className="text-right">
+                      <p className="text-[18px] font-black text-[#008ABF]">R$ 19,90</p>
+                    </div>
                   </button>
                 </div>
 
                 {/* Monthly Plan */}
-                <button className="w-full p-5 rounded-[2rem] bg-[#008ABF] text-white shadow-lg shadow-[#008ABF]/20 active:scale-[0.98] transition-all">
-                  <div className="flex justify-between items-center">
-                    <p className="text-[17px] font-bold">Mensal (30 dias)</p>
-                    <p className="text-[17px] font-black">R$ 28,90</p>
+                <div className="relative pt-3">
+                  <div className="absolute -top-1.5 left-6 z-20">
+                    <div className="bg-[#008ABF] text-white text-[10px] font-black px-4 py-1.5 rounded-xl uppercase tracking-wider">
+                      Mais Popular
+                    </div>
                   </div>
-                </button>
+                  <button className="w-full flex items-center justify-between p-4 rounded-[1.5rem] border-2 border-[#008ABF] bg-white active:scale-[0.98] transition-all group">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-full bg-[#008ABF]/10 flex items-center justify-center">
+                        <Sparkles className="w-6 h-6 text-[#008ABF] fill-[#008ABF]" />
+                      </div>
+                      <div className="text-left">
+                        <p className="text-[16px] font-bold text-[#1A1A1A]">Assinatura Mensal</p>
+                        <p className="text-[12px] text-[#8E8E8E] font-medium">Cobrado a cada 30 dias</p>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-[18px] font-black text-[#008ABF]">R$ 28,90</p>
+                    </div>
+                  </button>
+                </div>
 
                 {/* 6 Months Plan */}
-                <button className="w-full p-5 rounded-[2rem] bg-[#008ABF] text-white shadow-lg shadow-[#008ABF]/20 active:scale-[0.98] transition-all">
-                  <div className="flex justify-between items-center">
-                    <p className="text-[17px] font-bold">6 meses (semestral)</p>
-                    <p className="text-[17px] font-black">R$ 99,90</p>
+                <div className="relative pt-3">
+                  <div className="absolute -top-1.5 left-6 z-20">
+                    <div className="bg-[#008ABF] text-white text-[10px] font-black px-4 py-1.5 rounded-xl uppercase tracking-wider">
+                      Melhor Valor
+                    </div>
                   </div>
-                </button>
+                  <button className="w-full flex items-center justify-between p-4 rounded-[1.5rem] border-2 border-[#008ABF] bg-white active:scale-[0.98] transition-all group">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-full bg-[#008ABF]/10 flex items-center justify-center">
+                        <Sparkles className="w-6 h-6 text-[#008ABF] fill-[#008ABF]" />
+                      </div>
+                      <div className="text-left">
+                        <p className="text-[16px] font-bold text-[#1A1A1A]">Assinatura Semestral</p>
+                        <p className="text-[12px] text-[#8E8E8E] font-medium">Cobrado a cada 180 dias</p>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-[18px] font-black text-[#008ABF]">R$ 99,90</p>
+                    </div>
+                  </button>
+                </div>
               </div>
 
               {/* CTA Section */}
