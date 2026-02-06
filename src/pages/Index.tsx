@@ -41,7 +41,7 @@ const Index = () => {
 
             <div className="mt-4">
               <h1 className="text-2xl font-bold tracking-tight text-[#1A1A1A]">Maya Privée</h1>
-              <p className="text-[#8E8E8E] text-[15px] font-medium mt-0.5">@mayaprivee • Visto recentemente</p>
+              <p className="text-[#8E8E8E] text-[15px] font-medium mt-0.5">@Maya_reserve_ • Visto recentemente</p>
             </div>
 
             {/* Bio */}
