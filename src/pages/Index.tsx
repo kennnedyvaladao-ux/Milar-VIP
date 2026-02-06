@@ -46,8 +46,8 @@ const Index = () => {
 
             {/* Bio */}
             <div className="mt-5 space-y-1.5">
-              <p className="text-[15px] leading-snug text-[#4A4A4A]">
-                Hey! 📝 Assine para ter acesso exclusivo ao meu conteúdo Premium.
+              <p className="text-[15px] leading-snug text-[#4A4A4A] font-medium italic">
+                Nem todo mundo merece me ver assim. Se você esta aqui... talvez mereça🔥
               </p>
               <div className="flex items-center justify-between text-[11px] text-[#4A4A4A] font-bold pt-1">
                 <span className="flex items-center gap-1 shrink-0">
