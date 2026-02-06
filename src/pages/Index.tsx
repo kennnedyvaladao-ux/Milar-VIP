@@ -193,7 +193,7 @@ const Index = () => {
           <div className="grid grid-cols-3 gap-2">
             {/* Row 1 */}
             <div className="aspect-square rounded-xl overflow-hidden shadow-sm">
-              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=500&auto=format&fit=crop" alt="Preview 1" className="w-full h-full object-cover" />
+              <img src="https://files.catbox.moe/dtwkge.jpg" alt="Preview 1" className="w-full h-full object-cover" />
             </div>
             <div className="aspect-square rounded-xl overflow-hidden shadow-sm">
               <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=500&auto=format&fit=crop" alt="Preview 2" className="w-full h-full object-cover" />
