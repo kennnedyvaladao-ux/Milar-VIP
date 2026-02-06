@@ -31,7 +31,7 @@ const Index = () => {
             <div className="relative inline-block">
               <div className="w-24 h-24 rounded-full border-[5px] border-white shadow-sm overflow-hidden bg-gray-100">
                 <img 
-                  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1000&auto=format&fit=crop" 
+                  src="https://files.catbox.moe/53wnxl.png" 
                   alt="Profile" 
                   className="w-full h-full object-cover"
                 />
