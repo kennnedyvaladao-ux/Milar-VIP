@@ -90,7 +90,7 @@ const Index = () => {
                       <p className="text-[12px] text-[#8E8E8E] font-medium">Cobrado a cada 7 dias</p>
                     </div>
                     <div className="text-right">
-                      <p className={`text-[18px] font-black transition-colors ${selectedPlan === 'weekly' ? 'text-[#008ABF]' : 'text-[#1A1A1A]'}`}>R$ 19,90</p>
+                      <p className={`text-[18px] font-medium transition-colors ${selectedPlan === 'weekly' ? 'text-[#008ABF]' : 'text-[#1A1A1A]'}`}>R$ 19,90</p>
                     </div>
                   </button>
                 </div>
@@ -115,7 +115,7 @@ const Index = () => {
                       <p className="text-[12px] text-[#8E8E8E] font-medium">Cobrado a cada 30 dias</p>
                     </div>
                     <div className="text-right">
-                      <p className={`text-[18px] font-black transition-colors ${selectedPlan === 'monthly' ? 'text-[#008ABF]' : 'text-[#1A1A1A]'}`}>R$ 28,90</p>
+                      <p className={`text-[18px] font-medium transition-colors ${selectedPlan === 'monthly' ? 'text-[#008ABF]' : 'text-[#1A1A1A]'}`}>R$ 28,90</p>
                     </div>
                   </button>
                 </div>
@@ -140,7 +140,7 @@ const Index = () => {
                       <p className="text-[12px] text-[#8E8E8E] font-medium">Cobrado a cada 180 dias</p>
                     </div>
                     <div className="text-right">
-                      <p className={`text-[18px] font-black transition-colors ${selectedPlan === 'semester' ? 'text-[#008ABF]' : 'text-[#1A1A1A]'}`}>R$ 99,90</p>
+                      <p className={`text-[18px] font-medium transition-colors ${selectedPlan === 'semester' ? 'text-[#008ABF]' : 'text-[#1A1A1A]'}`}>R$ 99,90</p>
                     </div>
                   </button>
                 </div>
