@@ -12,17 +12,19 @@ const Index = () => {
       {/* Mobile-focused container */}
       <div className="w-full max-w-[500px] bg-[#F7F7F7] min-h-screen">
         
-        {/* Header / Banner */}
-        <div className="relative h-44 w-full overflow-hidden">
+        {/* Header / Banner - Ajustado para mostrar imagem completa */}
+        <div className="relative w-full overflow-visible">
           <img 
             src="https://files.catbox.moe/1qdiue.jpg" 
             alt="Banner" 
-            className="w-full h-full object-cover"
+            className="w-full h-auto block"
           />
+          {/* Efeito de sombra blur na divisão */}
+          <div className="absolute -bottom-6 left-0 right-0 h-12 bg-black/10 blur-xl z-0" />
         </div>
 
         {/* Profile Card Container */}
-        <div className="mx-4 -mt-10 mb-6 bg-white rounded-[2.5rem] shadow-[0_4px_20px_rgba(0,0,0,0.05)] overflow-hidden relative z-10 pb-10">
+        <div className="mx-4 -mt-12 mb-6 bg-white rounded-[2.5rem] shadow-[0_10px_30px_rgba(0,0,0,0.08)] overflow-hidden relative z-10 pb-10 border border-white/50 backdrop-blur-sm">
           
           <div className="px-6 pt-6">
             {/* Profile Avatar */}
