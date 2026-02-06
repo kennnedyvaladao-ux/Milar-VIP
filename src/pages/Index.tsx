@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Lock, Sparkles, MessageCircle, Flame } from "lucide-react";
 
 const Index = () => {
+  const [selectedPlan, setSelectedPlan] = useState<string>("weekly");
+
   return (
     <div className="min-h-screen bg-[#F8F9FA] font-sans text-[#1A1A1A] pb-12 flex justify-center">
       {/* Mobile-focused container */}
@@ -74,13 +77,20 @@ const Index = () => {
                       Oferta Limitada
                     </div>
                   </div>
-                  <button className="w-full flex items-center justify-between p-5 rounded-[1.5rem] border-2 border-[#008ABF] bg-white active:scale-[0.98] transition-all group">
+                  <button 
+                    onClick={() => setSelectedPlan('weekly')}
+                    className={`w-full flex items-center justify-between p-5 rounded-[1.5rem] border transition-all active:scale-[0.98] bg-white ${
+                      selectedPlan === 'weekly' 
+                      ? 'border-[#008ABF] border-2 shadow-[0_0_10px_rgba(0,138,191,0.1)]' 
+                      : 'border-[#E5E7EB]'
+                    }`}
+                  >
                     <div className="text-left">
                       <p className="text-[16px] font-bold text-[#1A1A1A]">Assinatura Semanal</p>
                       <p className="text-[12px] text-[#8E8E8E] font-medium">Cobrado a cada 7 dias</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-[18px] font-black text-[#008ABF]">R$ 19,90</p>
+                      <p className={`text-[18px] font-black transition-colors ${selectedPlan === 'weekly' ? 'text-[#008ABF]' : 'text-[#1A1A1A]'}`}>R$ 19,90</p>
                     </div>
                   </button>
                 </div>
@@ -92,13 +102,20 @@ const Index = () => {
                       Mais Popular
                     </div>
                   </div>
-                  <button className="w-full flex items-center justify-between p-5 rounded-[1.5rem] border-2 border-[#008ABF] bg-white active:scale-[0.98] transition-all group">
+                  <button 
+                    onClick={() => setSelectedPlan('monthly')}
+                    className={`w-full flex items-center justify-between p-5 rounded-[1.5rem] border transition-all active:scale-[0.98] bg-white ${
+                      selectedPlan === 'monthly' 
+                      ? 'border-[#008ABF] border-2 shadow-[0_0_10px_rgba(0,138,191,0.1)]' 
+                      : 'border-[#E5E7EB]'
+                    }`}
+                  >
                     <div className="text-left">
                       <p className="text-[16px] font-bold text-[#1A1A1A]">Assinatura Mensal</p>
                       <p className="text-[12px] text-[#8E8E8E] font-medium">Cobrado a cada 30 dias</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-[18px] font-black text-[#008ABF]">R$ 28,90</p>
+                      <p className={`text-[18px] font-black transition-colors ${selectedPlan === 'monthly' ? 'text-[#008ABF]' : 'text-[#1A1A1A]'}`}>R$ 28,90</p>
                     </div>
                   </button>
                 </div>
@@ -110,13 +127,20 @@ const Index = () => {
                       Melhor Valor
                     </div>
                   </div>
-                  <button className="w-full flex items-center justify-between p-5 rounded-[1.5rem] border-2 border-[#008ABF] bg-white active:scale-[0.98] transition-all group">
+                  <button 
+                    onClick={() => setSelectedPlan('semester')}
+                    className={`w-full flex items-center justify-between p-5 rounded-[1.5rem] border transition-all active:scale-[0.98] bg-white ${
+                      selectedPlan === 'semester' 
+                      ? 'border-[#008ABF] border-2 shadow-[0_0_10px_rgba(0,138,191,0.1)]' 
+                      : 'border-[#E5E7EB]'
+                    }`}
+                  >
                     <div className="text-left">
                       <p className="text-[16px] font-bold text-[#1A1A1A]">Assinatura Semestral</p>
                       <p className="text-[12px] text-[#8E8E8E] font-medium">Cobrado a cada 180 dias</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-[18px] font-black text-[#008ABF]">R$ 99,90</p>
+                      <p className={`text-[18px] font-black transition-colors ${selectedPlan === 'semester' ? 'text-[#008ABF]' : 'text-[#1A1A1A]'}`}>R$ 99,90</p>
                     </div>
                   </button>
                 </div>
