@@ -120,51 +120,46 @@ const Index = () => {
         </div>
 
         {/* Content Preview */}
-        <div className="px-6 pb-12">
-          <h3 className="text-[12px] font-bold text-[#8E8E8E] uppercase tracking-widest mb-4">Prévia do Conteúdo (6)</h3>
-          <div className="grid grid-cols-3 gap-2.5">
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-sm">
+        <div className="px-5 pb-16">
+          <h3 className="text-[11px] font-bold text-[#A0A0A0] uppercase tracking-widest mb-4 ml-1">PRÉVIA DO CONTEÚDO (6)</h3>
+          <div className="grid grid-cols-3 gap-2">
+            {/* Row 1 */}
+            <div className="aspect-square rounded-xl overflow-hidden">
               <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=500&auto=format&fit=crop" alt="Preview 1" className="w-full h-full object-cover" />
             </div>
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-sm">
+            <div className="aspect-square rounded-xl overflow-hidden">
               <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=500&auto=format&fit=crop" alt="Preview 2" className="w-full h-full object-cover" />
             </div>
-            <div className="aspect-square rounded-2xl relative overflow-hidden shadow-sm">
-              <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?q=80&w=500&auto=format&fit=crop" alt="Preview 3" className="w-full h-full object-cover blur-md scale-110" />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/5">
-                <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
-                  <Lock className="w-5 h-5 text-white fill-white" />
-                </div>
+            <div className="aspect-square rounded-xl relative overflow-hidden bg-[#222]">
+              <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?q=80&w=500&auto=format&fit=crop" alt="Preview 3" className="w-full h-full object-cover blur-2xl opacity-40" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Lock className="w-8 h-8 text-white fill-white" />
               </div>
             </div>
-            <div className="aspect-square rounded-2xl relative overflow-hidden shadow-sm">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=500&auto=format&fit=crop" alt="Preview 4" className="w-full h-full object-cover blur-md scale-110" />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/5">
-                <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
-                  <Lock className="w-5 h-5 text-white fill-white" />
-                </div>
+
+            {/* Row 2 */}
+            <div className="aspect-square rounded-xl relative overflow-hidden bg-[#222]">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=500&auto=format&fit=crop" alt="Preview 4" className="w-full h-full object-cover blur-2xl opacity-40" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Lock className="w-8 h-8 text-white fill-white" />
               </div>
             </div>
-            <div className="aspect-square rounded-2xl relative overflow-hidden shadow-sm">
-              <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=500&auto=format&fit=crop" alt="Preview 5" className="w-full h-full object-cover blur-md scale-110" />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/5">
-                <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
-                  <Lock className="w-5 h-5 text-white fill-white" />
-                </div>
+            <div className="aspect-square rounded-xl relative overflow-hidden bg-[#222]">
+              <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=500&auto=format&fit=crop" alt="Preview 5" className="w-full h-full object-cover blur-2xl opacity-40" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Lock className="w-8 h-8 text-white fill-white" />
               </div>
             </div>
-            <div className="aspect-square rounded-2xl relative overflow-hidden shadow-sm">
-              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=500&auto=format&fit=crop" alt="Preview 6" className="w-full h-full object-cover blur-md scale-110" />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/5">
-                <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
-                  <Lock className="w-5 h-5 text-white fill-white" />
-                </div>
+            <div className="aspect-square rounded-xl relative overflow-hidden bg-[#222]">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=500&auto=format&fit=crop" alt="Preview 6" className="w-full h-full object-cover blur-2xl opacity-40" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Lock className="w-8 h-8 text-white fill-white" />
               </div>
             </div>
           </div>
           
-          <p className="text-center mt-8 text-[#A0A0A0] text-[13px] font-medium leading-relaxed px-4">
-            Assine para liberar <span className="text-[#1A1A1A] font-bold">todas as 548 fotos</span> e vídeos.
+          <p className="text-center mt-6 text-[#A0A0A0] text-[11px] font-medium leading-relaxed">
+            Assine para liberar todas as 548 fotos e vídeos.
           </p>
         </div>
       </div>
