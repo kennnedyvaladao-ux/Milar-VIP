@@ -166,7 +166,7 @@ const Index = () => {
         {/* Content Preview */}
         <div className="px-5 pb-16">
           <div className="mb-4 ml-1">
-            <h3 className="text-[11px] font-bold text-[#A0A0A0] uppercase tracking-widest">CONTEÚDO</h3>
+            <h3 className="text-[11px] font-bold text-[#A0A0A0] uppercase tracking-widest">PRÉVIA DO CONTEÚDO</h3>
             <div className="flex items-center gap-1.5 text-[11px] text-[#A0A0A0] font-medium mt-0.5">
               <span>Fotos (537)</span>
               <span>•</span>
