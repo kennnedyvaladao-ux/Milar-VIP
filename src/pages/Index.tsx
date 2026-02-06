@@ -104,15 +104,16 @@ const Index = () => {
                 </button>
               </div>
 
-              {/* Already Paid Button */}
-              <div className="mt-8 pt-4 border-t border-gray-100 text-center">
-                <Button className="w-full h-14 bg-[#1A1A1A] hover:bg-[#2A2A2A] text-white font-bold text-base rounded-[1.25rem] gap-2 active:scale-[0.98] transition-all">
-                  <Lock className="w-4 h-4" />
-                  Já fiz o pagamento
+              {/* CTA Section */}
+              <div className="mt-8 space-y-4">
+                <div className="flex items-center justify-center gap-2 py-3.5 bg-[#E1F3F2] rounded-2xl text-[#2F9E98] text-[15px] font-bold">
+                  <Sparkles className="w-4 h-4 fill-current" />
+                  Aprovação imediata
+                </div>
+
+                <Button className="w-full h-14 bg-[#008ABF] hover:bg-[#0079A8] text-white font-black text-base rounded-full shadow-lg shadow-[#008ABF]/20 active:scale-[0.98] transition-all uppercase tracking-wider">
+                  ASSINAR AGORA
                 </Button>
-                <p className="text-[11px] text-[#A0A0A0] mt-3 font-medium">
-                  Toque acima para criar sua conta
-                </p>
               </div>
             </div>
           </div>
