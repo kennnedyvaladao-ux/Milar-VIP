@@ -196,7 +196,7 @@ const Index = () => {
               <img src="https://files.catbox.moe/dtwkge.jpg" alt="Preview 1" className="w-full h-full object-cover" />
             </div>
             <div className="aspect-square rounded-xl overflow-hidden shadow-sm">
-              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=500&auto=format&fit=crop" alt="Preview 2" className="w-full h-full object-cover" />
+              <img src="https://files.catbox.moe/31026x.jpg" alt="Preview 2" className="w-full h-full object-cover" />
             </div>
             {/* Locked Item */}
             <div className="aspect-square rounded-xl relative overflow-hidden bg-black/40 shadow-sm">
