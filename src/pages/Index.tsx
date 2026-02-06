@@ -1,9 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Lock, CreditCard, Sparkles, MessageCircle, MoreHorizontal } from "lucide-react";
+import { Lock, Sparkles, MessageCircle, Flame } from "lucide-react";
 
 const Index = () => {
   return (
@@ -20,7 +18,7 @@ const Index = () => {
           />
         </div>
 
-        {/* Profile Card Container - White rounded container as seen in image */}
+        {/* Profile Card Container */}
         <div className="mx-4 -mt-10 mb-6 bg-white rounded-[2.5rem] shadow-[0_4px_20px_rgba(0,0,0,0.05)] overflow-hidden relative z-10 pb-10">
           
           <div className="px-6 pt-6">
@@ -62,79 +60,65 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Offer Card */}
-            <div className="mt-7 relative">
-              <div className="absolute -top-3.5 left-4 z-20">
-                <div className="bg-[#008ABF] text-white text-[11px] font-black py-1 px-4 rounded-full uppercase tracking-wide">
-                  Oferta Limitada
-                </div>
-              </div>
-              <div className="flex items-center justify-between p-5 rounded-[1.25rem] border-2 border-[#008ABF] bg-[#F1F9FE] relative">
-                <div className="flex items-center gap-3.5">
-                  <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center shadow-sm">
-                    <Sparkles className="w-6 h-6 text-[#008ABF]" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-[#1A1A1A] text-[16px]">Assinatura Mensal</p>
-                    <p className="text-[#8E8E8E] text-[13px] font-medium">Cobrado a cada 30 dias</p>
-                  </div>
-                </div>
-                <div className="text-right">
-                  <p className="text-[22px] font-black text-[#008ABF]">R$ 39,92</p>
-                </div>
-              </div>
-            </div>
-
-            {/* User Data Form */}
-            <div className="mt-8 space-y-6">
-              <div className="space-y-3.5">
-                <Label className="text-[12px] font-bold text-[#8E8E8E] uppercase tracking-widest ml-1">Seus Dados</Label>
-                <div className="space-y-3">
-                  <Input 
-                    placeholder="Nome Completo" 
-                    className="h-[52px] bg-[#F2F2F2] border-none rounded-2xl px-5 placeholder:text-[#A0A0A0] text-[16px] font-medium focus-visible:ring-2 focus-visible:ring-[#008ABF]/20"
-                  />
-                  <Input 
-                    placeholder="WhatsApp / Telefone" 
-                    className="h-[52px] bg-[#F2F2F2] border-none rounded-2xl px-5 placeholder:text-[#A0A0A0] text-[16px] font-medium focus-visible:ring-2 focus-visible:ring-[#008ABF]/20"
-                  />
-                  <Input 
-                    placeholder="E-mail" 
-                    className="h-[52px] bg-[#F2F2F2] border-none rounded-2xl px-5 placeholder:text-[#A0A0A0] text-[16px] font-medium focus-visible:ring-2 focus-visible:ring-[#008ABF]/20"
-                  />
-                </div>
+            {/* New Subscription Plans Section */}
+            <div className="mt-10 space-y-6">
+              <div className="flex items-center justify-center gap-2 text-[#1A1A1A] font-bold text-lg">
+                Ofertas exclusivas <Flame className="w-5 h-5 text-orange-500 fill-orange-500" />
               </div>
 
-              <div className="space-y-3.5">
-                <Label className="text-[12px] font-bold text-[#8E8E8E] uppercase tracking-widest ml-1">Pagamento</Label>
-                <div className="grid grid-cols-2 gap-2 p-1.5 bg-[#F2F2F2] rounded-2xl">
-                  <button className="flex items-center justify-center gap-2.5 py-3 rounded-xl bg-white shadow-sm font-bold text-[#008ABF] text-sm">
-                    <div className="relative w-4 h-4 flex items-center justify-center">
-                      <div className="absolute w-3.5 h-3.5 border-2 border-[#008ABF] rotate-45"></div>
-                      <div className="w-1.5 h-1.5 bg-[#008ABF] rotate-45"></div>
+              <div className="space-y-4">
+                {/* Promo Plan */}
+                <div className="relative">
+                  <div className="absolute -top-3 -right-2 z-20">
+                    <div className="bg-[#E1F3F2] text-[#2F9E98] text-[10px] font-bold py-1 px-3 rounded-full border border-[#2F9E98]/20">
+                      -10% OFF
                     </div>
-                    PIX
-                  </button>
-                  <button className="flex items-center justify-center gap-2.5 py-3 rounded-xl font-bold text-[#8E8E8E] text-sm">
-                    <CreditCard className="w-4.5 h-4.5" />
-                    Cartão
+                  </div>
+                  <button className="w-full text-left group">
+                    <div className="p-5 rounded-[2rem] bg-[#008ABF] text-white shadow-lg shadow-[#008ABF]/20 active:scale-[0.98] transition-all relative overflow-hidden">
+                      <div className="flex justify-between items-center relative z-10">
+                        <p className="text-[17px] font-bold">Assinar agora (7 dias)</p>
+                        <p className="text-[17px] font-black">R$ 19,90</p>
+                      </div>
+                    </div>
+                    <p className="text-center text-[11px] text-[#8E8E8E] mt-2">
+                      De <span className="line-through">R$ 22,90</span> por apenas <span className="font-bold">R$ 19,90</span>
+                    </p>
                   </button>
                 </div>
 
-                <div className="flex items-center justify-center gap-2 py-3.5 bg-[#E1F3F2] rounded-2xl text-[#2F9E98] text-[14px] font-bold">
-                  <Sparkles className="w-4 h-4 fill-current" />
-                  Aprovação imediata
-                </div>
+                {/* Monthly Plan */}
+                <button className="w-full p-5 rounded-[2rem] bg-[#008ABF] text-white shadow-lg shadow-[#008ABF]/20 active:scale-[0.98] transition-all">
+                  <div className="flex justify-between items-center">
+                    <p className="text-[17px] font-bold">Mensal (30 dias)</p>
+                    <p className="text-[17px] font-black">R$ 28,90</p>
+                  </div>
+                </button>
+
+                {/* 6 Months Plan */}
+                <button className="w-full p-5 rounded-[2rem] bg-[#008ABF] text-white shadow-lg shadow-[#008ABF]/20 active:scale-[0.98] transition-all">
+                  <div className="flex justify-between items-center">
+                    <p className="text-[17px] font-bold">6 meses (semestral)</p>
+                    <p className="text-[17px] font-black">R$ 99,90</p>
+                  </div>
+                </button>
               </div>
 
-              <Button className="w-full h-[60px] bg-[#008ABF] hover:bg-[#0079A8] text-white font-black text-lg rounded-full shadow-lg shadow-[#008ABF]/20 active:scale-[0.98] transition-all uppercase tracking-wider mt-4">
-                ASSINAR AGORA
-              </Button>
+              {/* Already Paid Button */}
+              <div className="mt-8 pt-4 border-t border-gray-100 text-center">
+                <Button className="w-full h-14 bg-[#1A1A1A] hover:bg-[#2A2A2A] text-white font-bold text-base rounded-[1.25rem] gap-2 active:scale-[0.98] transition-all">
+                  <Lock className="w-4 h-4" />
+                  Já fiz o pagamento
+                </Button>
+                <p className="text-[11px] text-[#A0A0A0] mt-3 font-medium">
+                  Toque acima para criar sua conta
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Content Preview - Below the main white card */}
+        {/* Content Preview */}
         <div className="px-6 pb-12">
           <h3 className="text-[12px] font-bold text-[#8E8E8E] uppercase tracking-widest mb-4">Prévia do Conteúdo (6)</h3>
           <div className="grid grid-cols-3 gap-2.5">
