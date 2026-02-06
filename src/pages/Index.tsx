@@ -7,6 +7,19 @@ import { Lock, Sparkles, MessageCircle, Flame } from "lucide-react";
 const Index = () => {
   const [selectedPlan, setSelectedPlan] = useState<string>("weekly");
 
+  const checkoutUrls: Record<string, string> = {
+    weekly: "https://sharkbot.com.br/c/vip-maya-7-dias",
+    monthly: "#", // Add monthly link here
+    semester: "#", // Add semester link here
+  };
+
+  const handleSubscribe = () => {
+    const url = checkoutUrls[selectedPlan];
+    if (url && url !== "#") {
+      window.location.href = url;
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#F8F9FA] font-sans text-[#1A1A1A] pb-12 flex justify-center">
       {/* Mobile-focused container */}
@@ -155,7 +168,10 @@ const Index = () => {
                   Aprovação imediata
                 </div>
 
-                <Button className="w-full h-14 bg-[#008ABF] hover:bg-[#0079A8] text-white font-black text-base rounded-full shadow-lg shadow-[#008ABF]/20 active:scale-[0.98] transition-all uppercase tracking-wider">
+                <Button 
+                  onClick={handleSubscribe}
+                  className="w-full h-14 bg-[#008ABF] hover:bg-[#0079A8] text-white font-black text-base rounded-full shadow-lg shadow-[#008ABF]/20 active:scale-[0.98] transition-all uppercase tracking-wider"
+                >
                   ASSINAR AGORA
                 </Button>
               </div>
