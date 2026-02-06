@@ -49,17 +49,17 @@ const Index = () => {
               <p className="text-[15px] leading-snug text-[#4A4A4A]">
                 Hey! 📝 Assine para ter acesso exclusivo ao meu conteúdo Premium.
               </p>
-              <div className="flex items-center gap-x-3 text-[13px] text-[#4A4A4A] font-medium pt-1 overflow-x-auto no-scrollbar whitespace-nowrap">
-                <span className="flex items-center gap-1.5 shrink-0">
-                  <Sparkles className="w-3.5 h-3.5 text-[#008ABF] fill-[#008ABF]" />
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[14px] text-[#4A4A4A] font-medium pt-1">
+                <span className="flex items-center gap-1.5">
+                  <Sparkles className="w-4 h-4 text-[#008ABF] fill-[#008ABF]" />
                   500+ Posts
                 </span>
-                <span className="flex items-center gap-1.5 shrink-0">
-                  <div className="w-4 h-4 rounded-full bg-gradient-to-tr from-[#8E2DE2] to-[#4A00E0] flex items-center justify-center text-[9px] text-white font-black italic">G</div>
+                <span className="flex items-center gap-1.5">
+                  <div className="w-[18px] h-[18px] rounded-full bg-gradient-to-tr from-[#8E2DE2] to-[#4A00E0] flex items-center justify-center text-[10px] text-white font-black italic">G</div>
                   Atualizações diárias
                 </span>
-                <span className="flex items-center gap-1.5 shrink-0">
-                  <MessageCircle className="w-3.5 h-3.5 text-[#25D366] fill-[#25D366]" />
+                <span className="flex items-center gap-1.5">
+                  <MessageCircle className="w-4 h-4 text-[#25D366] fill-[#25D366]" />
                   Chat Direto
                 </span>
               </div>
