@@ -28,7 +28,7 @@ const Index = () => {
         {/* Header / Banner - Ajustado para mostrar imagem completa */}
         <div className="relative w-full overflow-visible">
           <img
-            src="https://files.catbox.moe/63wjvk.png"
+            src="https://files.catbox.moe/uvmhms.png"
             alt="Banner"
             className="w-full h-auto block"
           />
