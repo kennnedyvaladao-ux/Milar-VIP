@@ -13,14 +13,6 @@ const Index = () => {
     semester: "https://sharkbot.com.br/c/vip-mila-6m",
   };
 
-  const handlePlanSelection = (plan: string) => {
-    setSelectedPlan(plan);
-    const url = checkoutUrls[plan];
-    if (url && url !== "#") {
-      window.location.href = url;
-    }
-  };
-
   const handleSubscribe = () => {
     const url = checkoutUrls[selectedPlan];
     if (url && url !== "#") {
@@ -33,13 +25,14 @@ const Index = () => {
       {/* Mobile-focused container */}
       <div className="w-full max-w-[500px] bg-[#F7F7F7] min-h-screen">
         
-        {/* Header / Banner */}
+        {/* Header / Banner - Ajustado para mostrar imagem completa */}
         <div className="relative w-full overflow-visible">
           <img
             src="https://files.catbox.moe/uvmhms.png"
             alt="Banner"
             className="w-full h-auto block"
           />
+          {/* Efeito de sombra blur na divisão */}
           <div className="absolute -bottom-6 left-0 right-0 h-12 bg-black/10 blur-xl z-0" />
         </div>
 
@@ -100,7 +93,7 @@ const Index = () => {
                     </div>
                   </div>
                   <button 
-                    onClick={() => handlePlanSelection('weekly')}
+                    onClick={() => setSelectedPlan('weekly')}
                     className={`w-full flex items-center justify-between p-5 rounded-[1.5rem] border transition-all active:scale-[0.98] bg-white ${
                       selectedPlan === 'weekly' 
                       ? 'border-[#008ABF] border-2 shadow-[0_0_10px_rgba(0,138,191,0.1)]' 
@@ -125,7 +118,7 @@ const Index = () => {
                     </div>
                   </div>
                   <button 
-                    onClick={() => handlePlanSelection('monthly')}
+                    onClick={() => setSelectedPlan('monthly')}
                     className={`w-full flex items-center justify-between p-5 rounded-[1.5rem] border transition-all active:scale-[0.98] bg-white ${
                       selectedPlan === 'monthly' 
                       ? 'border-[#008ABF] border-2 shadow-[0_0_10px_rgba(0,138,191,0.1)]' 
@@ -150,7 +143,7 @@ const Index = () => {
                     </div>
                   </div>
                   <button 
-                    onClick={() => handlePlanSelection('semester')}
+                    onClick={() => setSelectedPlan('semester')}
                     className={`w-full flex items-center justify-between p-5 rounded-[1.5rem] border transition-all active:scale-[0.98] bg-white ${
                       selectedPlan === 'semester' 
                       ? 'border-[#008ABF] border-2 shadow-[0_0_10px_rgba(0,138,191,0.1)]' 
@@ -198,34 +191,46 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-3 gap-2">
+            {/* Row 1 */}
             <div className="aspect-square rounded-xl overflow-hidden shadow-sm">
               <img src="https://files.catbox.moe/dtwkge.jpg" alt="Preview 1" className="w-full h-full object-cover" />
             </div>
             <div className="aspect-square rounded-xl overflow-hidden shadow-sm">
               <img src="https://files.catbox.moe/31026x.jpg" alt="Preview 2" className="w-full h-full object-cover" />
             </div>
+            {/* Locked Item */}
             <div className="aspect-square rounded-xl relative overflow-hidden bg-black/40 shadow-sm">
               <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?q=80&w=500&auto=format&fit=crop" alt="Preview 3" className="w-full h-full object-cover blur-[24px] scale-125 opacity-50" />
               <div className="absolute inset-0 flex items-center justify-center bg-black/10">
-                <Lock className="w-6 h-6 text-[#E8E1D5] stroke-[1.8] drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]" />
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <Lock className="w-6 h-6 text-[#E8E1D5] stroke-[1.8] drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]" />
+                </div>
               </div>
             </div>
+
+            {/* Row 2 - All Locked */}
             <div className="aspect-square rounded-xl relative overflow-hidden bg-black/40 shadow-sm">
               <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=500&auto=format&fit=crop" alt="Preview 4" className="w-full h-full object-cover blur-[24px] scale-125 opacity-50" />
               <div className="absolute inset-0 flex items-center justify-center bg-black/10">
-                <Lock className="w-6 h-6 text-[#E8E1D5] stroke-[1.8] drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]" />
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <Lock className="w-6 h-6 text-[#E8E1D5] stroke-[1.8] drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]" />
+                </div>
               </div>
             </div>
             <div className="aspect-square rounded-xl relative overflow-hidden bg-black/40 shadow-sm">
               <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=500&auto=format&fit=crop" alt="Preview 5" className="w-full h-full object-cover blur-[24px] scale-125 opacity-50" />
               <div className="absolute inset-0 flex items-center justify-center bg-black/10">
-                <Lock className="w-6 h-6 text-[#E8E1D5] stroke-[1.8] drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]" />
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <Lock className="w-6 h-6 text-[#E8E1D5] stroke-[1.8] drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]" />
+                </div>
               </div>
             </div>
             <div className="aspect-square rounded-xl relative overflow-hidden bg-black/40 shadow-sm">
               <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=500&auto=format&fit=crop" alt="Preview 6" className="w-full h-full object-cover blur-[24px] scale-125 opacity-50" />
               <div className="absolute inset-0 flex items-center justify-center bg-black/10">
-                <Lock className="w-6 h-6 text-[#E8E1D5] stroke-[1.8] drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]" />
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <Lock className="w-6 h-6 text-[#E8E1D5] stroke-[1.8] drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]" />
+                </div>
               </div>
             </div>
           </div>
