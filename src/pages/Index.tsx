@@ -43,9 +43,9 @@ const Index = () => {
             {/* Profile Avatar */}
             <div className="relative inline-block">
               <div className="w-24 h-24 rounded-full border-[5px] border-white shadow-sm overflow-hidden bg-gray-100">
-                <img 
-                  src="https://files.catbox.moe/53wnxl.png" 
-                  alt="Profile" 
+                <img
+                  src="https://files.catbox.moe/ktfe48.jpg"
+                  alt="Profile"
                   className="w-full h-full object-cover"
                 />
               </div>
