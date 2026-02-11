@@ -27,9 +27,9 @@ const Index = () => {
         
         {/* Header / Banner - Ajustado para mostrar imagem completa */}
         <div className="relative w-full overflow-visible">
-          <img 
-            src="https://files.catbox.moe/1qdiue.jpg" 
-            alt="Banner" 
+          <img
+            src="https://files.catbox.moe/llp11a.jpeg"
+            alt="Banner"
             className="w-full h-auto block"
           />
           {/* Efeito de sombra blur na divisão */}
