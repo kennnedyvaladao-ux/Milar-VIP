@@ -8,9 +8,9 @@ const Index = () => {
   const [selectedPlan, setSelectedPlan] = useState<string>("weekly");
 
   const checkoutUrls: Record<string, string> = {
-    weekly: "https://sharkbot.com.br/c/vip-maya-7-dias",
-    monthly: "https://sharkbot.com.br/c/vip-maya-30-dias",
-    semester: "https://sharkbot.com.br/c/vip-maya-6m",
+    weekly: "https://sharkbot.com.br/c/vip-mila-7-dias",
+    monthly: "https://sharkbot.com.br/c/vip-mila-30-dias",
+    semester: "https://sharkbot.com.br/c/vip-mila-6m",
   };
 
   const handleSubscribe = () => {
